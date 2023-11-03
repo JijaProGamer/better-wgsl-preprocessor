@@ -29,7 +29,7 @@ npm install -g better-wgsl-preprocessor
 Once the preprocessor is installed, you can use it as a command-line tool. The basic syntax is as follows:
 
 ```bash
-wgsl-preprocessor input.wgsl output.wgsl
+better-wgsl-preprocessor input.wgsl output.wgsl
 ```
 
 Replace input.wgsl with the path to your source WGSL file and output.wgsl with the desired output file.
@@ -38,6 +38,7 @@ Example
 Suppose you have a WGSL file main.wgsl that includes other modules:
 
 ```wgsl
+// main.wgsl
 
 #include "utils.wgsl"
 // Now you can use both the utils and vectors contents
@@ -45,16 +46,20 @@ Suppose you have a WGSL file main.wgsl that includes other modules:
 ```
 
 ```wgsl
-// Your main WGSL code here
+// utils.wgsl
 
 #include "vector.wgsl"
+
+struct SomeUtilStruct {
+
+}
 ```
 
 Run the preprocessor as follows:
 
 ```bash
 
-wgsl-preprocessor main.wgsl new.wgsl
+better-wgsl-preprocessor main.wgsl new.wgsl
 ```
 
 The preprocessor will process the file, resolve the included modules, and generate an new output in new.wgsl.
