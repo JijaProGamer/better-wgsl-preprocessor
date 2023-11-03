@@ -1,6 +1,6 @@
 {
   "name": "better-wgsl-preprocessor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simplify and preprocess WGSL code",
   "main": "index.js",
   "scripts": {
