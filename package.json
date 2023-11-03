@@ -1,0 +1,34 @@
+{
+  "name": "better-wgsl-preprocessor",
+  "version": "1.0.0",
+  "description": "Simplify and preprocess WGSL code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JijaProGamer/better-wgsl-preprocessor.git"
+  },
+  "keywords": [
+    "WebGPU",
+    "WGSL",
+    "preprocessor",
+    "code",
+    "optimization",
+    "shader",
+    "graphics"
+  ],
+  "bin": {
+    "better-wgsl-preprocessor": "index.js"
+  },
+  "author": "Bloxxy213",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JijaProGamer/better-wgsl-preprocessor/issues"
+  },
+  "homepage": "https://github.com/JijaProGamer/better-wgsl-preprocessor#readme",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
